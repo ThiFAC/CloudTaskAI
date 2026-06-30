@@ -1,3 +1,33 @@
+cat > .gitignore <<'EOF'
+# Ignora tudo por padrão
+*
+
+# Permite as pastas e todo o conteúdo dentro delas
+!app/
+!app/**
+!infra/
+!infra/**
+!scripts/
+!scripts/**
+!tests/
+!tests/**
+!docs/
+!docs/**
+
+# Permite arquivos específicos na raiz
+!Dockerfile
+!docker-compose.yml
+!requirements.txt
+!.env.example
+!README.md
+!.gitignore
+
+# Garante que arquivos sensíveis dentro das pastas permitidas continuem ignorados
+**/__pycache__/
+**/.env
+**/.venv/
+EOF
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
