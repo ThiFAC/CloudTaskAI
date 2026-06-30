@@ -1,32 +1,3 @@
-cat > .gitignore <<'EOF'
-# Ignora tudo por padrão
-*
-
-# Permite as pastas e todo o conteúdo dentro delas
-!app/
-!app/**
-!infra/
-!infra/**
-!scripts/
-!scripts/**
-!tests/
-!tests/**
-!docs/
-!docs/**
-
-# Permite arquivos específicos na raiz
-!Dockerfile
-!docker-compose.yml
-!requirements.txt
-!README.md
-!.gitignore
-
-# Garante que arquivos sensíveis dentro das pastas permitidas continuem ignorados
-**/__pycache__/
-**/.env
-**/.venv/
-EOF
-
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -248,3 +219,7 @@ logs/
 # Os arquivos ficam só no computador do professor e persistem entre branches.
 docs/material_do_professor/
 
+.readme_docs/
+docs/
+exemplos/
+README.md
