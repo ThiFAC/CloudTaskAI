@@ -18,7 +18,6 @@ cat > .gitignore <<'EOF'
 !Dockerfile
 !docker-compose.yml
 !requirements.txt
-!.env.example
 !README.md
 !.gitignore
 
